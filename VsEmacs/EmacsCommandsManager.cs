@@ -106,6 +106,10 @@ namespace VsEmacs
                 var context = new EmacsCommandContext(this, TextStructureNavigatorSelectorService,
                     EditorOperationsFactoryService.GetEditorOperations(view), view,
                     CommandRouterProvider.GetCommandRouter(view));
+                if (ClipboardRing.Count == 0 ||  ClipboardRing.Last() != Clipboard.GetText())
+                {
+                    ClipboardRing.Add(Clipboard.GetText());
+                }
                 if (command == null)
                     return;
                 ITextUndoHistory history = TextUndoHistoryRegistry.GetHistory(context.TextBuffer);
