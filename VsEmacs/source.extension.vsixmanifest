@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="01268CA2-EE5D-4BA2-9AA3-A0FD40763201" Version="1.0" Language="en-US" Publisher="Reinitialized" />
+    <DisplayName>VsEmacs</DisplayName>
+    <Description xml:space="preserve">Provides basic support for Emacs keybindings and text editing commands.</Description>
+    <Icon>Emacs_small.png</Icon>
+    <PreviewImage>Emacs_big.png</PreviewImage>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="12.0" />
+  </Installation>
+  <Dependencies>
+    <Dependency d:Source="Manual" DisplayName="Microsoft .NET Framework" Id="Microsoft.Framework.NDP" Version="4.5" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
