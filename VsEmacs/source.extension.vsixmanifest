@@ -4,6 +4,7 @@
     <Identity Id="01268CA2-EE5D-4BA2-9AA3-A0FD40763201" Version="1.0" Language="en-US" Publisher="Reinitialized" />
     <DisplayName>VsEmacs</DisplayName>
     <Description xml:space="preserve">Provides basic support for Emacs keybindings and text editing commands.</Description>
+    <MoreInfo>https://github.com/reinitialized/VsEmacs</MoreInfo>
     <Icon>Emacs_small.png</Icon>
     <PreviewImage>Emacs_big.png</PreviewImage>
   </Metadata>

@@ -33,7 +33,7 @@ namespace VsEmacs
                 if (!service.IsEmacsVskInstalled)
                 {
                     string installPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
-                        "VsEmacs.vsk");
+                        "Emacs.vsk");
                     var confirmationDialog = new CopyFileConfirmationDialog();
                     confirmationDialog.StartPosition = FormStartPosition.CenterScreen;
                     if (!IsAdministrator)
