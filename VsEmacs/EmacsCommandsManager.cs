@@ -20,7 +20,7 @@ namespace VsEmacs
     [Export]
     internal class EmacsCommandsManager : IPartImportsSatisfiedNotification
     {
-        internal const string EmacsVskFile = "VsEmacs.vsk";
+        internal const string EmacsVskFile = "Emacs.vsk";
         private StringBuilder changes;
 
         public EmacsCommandsManager()
@@ -58,7 +58,7 @@ namespace VsEmacs
 
         internal bool IsEmacsVskInstalled
         {
-            get { return File.Exists(Path.Combine(EmacsInstallationPath, "VsEmacs.vsk")); }
+            get { return File.Exists(Path.Combine(EmacsInstallationPath, "Emacs.vsk")); }
         }
 
         internal string EmacsInstallationPath
@@ -256,7 +256,7 @@ namespace VsEmacs
                             return;
                         var path = registryKey2.GetValue("SchemeName") as string;
                         IsEnabled = !string.IsNullOrEmpty(path) &&
-                                    string.Equals("VsEmacs.vsk", Path.GetFileName(path),
+                                    string.Equals("Emacs.vsk", Path.GetFileName(path),
                                         StringComparison.InvariantCultureIgnoreCase);
                     }
                 }
